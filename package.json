@@ -24,5 +24,10 @@
     "passport": "*",
     "passport-http": "*",
     "passport-local": "*"
-  }
+  },
+
+ "engines": {
+     "node": "4.5.0",
+     "npm": "2.15.9"
+     }
 }
