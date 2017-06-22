@@ -12,7 +12,8 @@ var passport = require('passport');
 var localStrategy= require('passport-local').Strategy;
 var mongo= require('mongodb');
 var mongoose= require('mongoose');
-mongoose.connect('mongodb://localhost/loginApp');
+var MONGODB_URI = 'mongodb://khaira123:Charkhari@123@ds133922.mlab.com:33922/loginapp123';
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/loginApp');
 var db = mongoose.connection;
 
 var index = require('./routes/index');
